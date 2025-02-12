@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VS\\AGV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|D:\\VS\\AGV\\AGV\\warehouse_map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|solutionrelative:AGV\\warehouse_map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|D:\\VS\\AGV\\AGV\\Robot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|solutionrelative:AGV\\Robot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|D:\\VS\\AGV\\AGV\\TimeWindowAuctionManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|solutionrelative:AGV\\TimeWindowAuctionManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|D:\\VS\\AGV\\AGV\\Biding.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|solutionrelative:AGV\\Biding.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|D:\\VS\\AGV\\AGV\\distance_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|solutionrelative:AGV\\distance_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|D:\\VS\\AGV\\AGV\\Task.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|solutionrelative:AGV\\Task.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|D:\\VS\\AGV\\AGV\\warehouse_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{373917FD-EDCA-4D18-9751-3C60A04890FA}|AGV\\AGV.vcxproj|solutionrelative:AGV\\warehouse_map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "warehouse_map.cpp",
+              "DocumentMoniker": "D:\\VS\\AGV\\AGV\\warehouse_map.cpp",
+              "RelativeDocumentMoniker": "AGV\\warehouse_map.cpp",
+              "ToolTip": "D:\\VS\\AGV\\AGV\\warehouse_map.cpp",
+              "RelativeToolTip": "AGV\\warehouse_map.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGgAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-29T23:13:51.506Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Robot.h",
+              "DocumentMoniker": "D:\\VS\\AGV\\AGV\\Robot.h",
+              "RelativeDocumentMoniker": "AGV\\Robot.h",
+              "ToolTip": "D:\\VS\\AGV\\AGV\\Robot.h",
+              "RelativeToolTip": "AGV\\Robot.h",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T01:08:36.256Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TimeWindowAuctionManager.h",
+              "DocumentMoniker": "D:\\VS\\AGV\\AGV\\TimeWindowAuctionManager.h",
+              "RelativeDocumentMoniker": "AGV\\TimeWindowAuctionManager.h",
+              "ToolTip": "D:\\VS\\AGV\\AGV\\TimeWindowAuctionManager.h",
+              "RelativeToolTip": "AGV\\TimeWindowAuctionManager.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-08T20:54:46.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "distance_utils.h",
+              "DocumentMoniker": "D:\\VS\\AGV\\AGV\\distance_utils.h",
+              "RelativeDocumentMoniker": "AGV\\distance_utils.h",
+              "ToolTip": "D:\\VS\\AGV\\AGV\\distance_utils.h",
+              "RelativeToolTip": "AGV\\distance_utils.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-09T10:30:27.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Task.h",
+              "DocumentMoniker": "D:\\VS\\AGV\\AGV\\Task.h",
+              "RelativeDocumentMoniker": "AGV\\Task.h",
+              "ToolTip": "D:\\VS\\AGV\\AGV\\Task.h",
+              "RelativeToolTip": "AGV\\Task.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-24T02:29:58.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Biding.h",
+              "DocumentMoniker": "D:\\VS\\AGV\\AGV\\Biding.h",
+              "RelativeDocumentMoniker": "AGV\\Biding.h",
+              "ToolTip": "D:\\VS\\AGV\\AGV\\Biding.h",
+              "RelativeToolTip": "AGV\\Biding.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-28T05:43:08.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "warehouse_map.h",
+              "DocumentMoniker": "D:\\VS\\AGV\\AGV\\warehouse_map.h",
+              "RelativeDocumentMoniker": "AGV\\warehouse_map.h",
+              "ToolTip": "D:\\VS\\AGV\\AGV\\warehouse_map.h",
+              "RelativeToolTip": "AGV\\warehouse_map.h",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-24T03:10:28.57Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

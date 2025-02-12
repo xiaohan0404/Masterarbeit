@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<defs>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="gray" stroke-width="0.5"/>
+  </pattern>
+</defs>
+<rect width="800" height="600" fill="url(#grid)"/>
+<!-- Area A -->
+<rect x="100" y="80" width="200" height="40" fill="black"/>
+<rect x="100" y="160" width="200" height="40" fill="black"/>
+<rect x="100" y="240" width="200" height="40" fill="black"/>
+<rect x="100" y="320" width="200" height="40" fill="black"/>
+<!-- Area B -->
+<rect x="500" y="80" width="200" height="40" fill="black"/>
+<rect x="500" y="160" width="200" height="40" fill="black"/>
+<rect x="500" y="240" width="200" height="40" fill="black"/>
+<rect x="500" y="320" width="200" height="40" fill="black"/>
+<!-- High tasks -->
+<circle cx="120" cy="120" r="8" fill="#FF4081"/>
+<text x="130" y="135" font-size="12">P1</text>
+<circle cx="240" cy="200" r="8" fill="#FF4081"/>
+<text x="250" y="215" font-size="12">P2</text>
+<circle cx="540" cy="120" r="8" fill="#FF4081"/>
+<text x="550" y="135" font-size="12">P3</text>
+<circle cx="640" cy="280" r="8" fill="#FF4081"/>
+<text x="650" y="295" font-size="12">P4</text>
+<!-- Low tasks -->
+<rect x="252" y="72" width="16" height="16" fill="#FFA726"/>
+<text x="260" y="70" font-size="12">T1</text>
+<rect x="192" y="312" width="16" height="16" fill="#FFA726"/>
+<text x="200" y="310" font-size="12">T2</text>
+<rect x="572" y="152" width="16" height="16" fill="#FFA726"/>
+<text x="580" y="150" font-size="12">T3</text>
+<!-- Path -->
+<path d="M150 500 L 160 500 L 160 480 L 160 460 L 160 440 L 160 420 L 160 400 L 160 380 L 160 360 L 140 360 L 120 360 L 100 360 L 80 360 L 80 340 L 80 320 L 80 300 L 80 280 L 80 260 L 80 240 L 80 220 L 80 200 L 80 180 L 80 160 L 80 140 L 80 120 L 100 120 L 120 120 L 120 120 L 140 120 L 160 120 L 180 120 L 200 120 L 220 120 L 240 120 L 260 120 L 280 120 L 300 120 L 320 120 L 340 120 L 360 120 L 380 120 L 400 120 L 420 120 L 440 120 L 460 120 L 480 120 L 500 120 L 520 120 L 540 120 L 540 120 L 540 140 L 520 140 L 500 140 L 480 140 L 480 160 L 480 180 L 480 200 L 480 220 L 480 240 L 480 260 L 480 280 L 480 300 L 460 300 L 440 300 L 420 300 L 400 300 L 380 300 L 360 300 L 340 300 L 320 300 L 300 300 L 280 300 L 260 300 L 240 300 L 220 300 L 200 300 L 200 300 L 200 280 L 220 280 L 240 280 L 260 280 L 280 280 L 300 280 L 320 280 L 340 280 L 360 280 L 380 280 L 400 280 L 420 280 L 440 280 L 460 280 L 480 280 L 500 280 L 520 280 L 540 280 L 560 280 L 580 280 L 600 280 L 620 280 L 640 280" stroke="#4CAF50" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+<circle cx="150" cy="500" r="5" fill="#4CAF50"/>
+<circle cx="640" cy="280" r="5" fill="#FF4081"/>
+<!-- High-equipped robot -->
+<g transform="translate(150,500)">
+  <circle r="15" fill="#4CAF50"/>
+  <line x1="0" y1="0" x2="15" y2="0" stroke="white" stroke-width="3"/>
+  <text x="25" y="5" font-size="14" fill="#4CAF50">High-equipped Robot</text>
+</g>
+<!-- Low-equipped robot -->
+<g transform="translate(600,500)">
+  <path d="M 0,-15 L 13,-7.5 L 13,7.5 L 0,15 L -13,7.5 L -13,-7.5 Z" fill="#2196F3"/>
+  <line x1="0" y1="0" x2="13" y2="0" stroke="white" stroke-width="3"/>
+  <text x="25" y="5" font-size="14" fill="#2196F3">Low-equipped Robot</text>
+</g>
+<!-- Charging station -->
+<rect x="350" y="480" width="100" height="60" fill="#FFD700" opacity="0.3"/>
+<text x="360" y="515" font-size="16" fill="#B8860B">Charging</text>
+<!-- Legend -->
+<g transform="translate(50, 570)">
+  <circle cx="10" cy="0" r="8" fill="#FF4081"/>
+  <text x="25" y="5" font-size="12">High tasks</text>
+  <rect x="100" y="-8" width="16" height="16" fill="#FFA726"/>
+  <text x="125" y="5" font-size="12">Low tasks</text>
+</g>
+</svg>
