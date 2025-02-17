@@ -166,7 +166,7 @@ public:
     }
 
     // 修改 generateSVG 方法，添加路径参数
-    void generateSVG(const std::string& filename, const vector<pair<int, int>>& path = {}) {
+    void generateSVG(const std::string& filename, const vector<vector<pair<int, int>>>& Paths) {
         std::ofstream file(filename);
         if (!file.is_open()) {
             std::cout << "Cannot create file: " << filename << std::endl;
@@ -179,8 +179,12 @@ public:
         drawGrid(file);
         drawShelves(file);
         drawTasks(file);
-        if (!path.empty()) {
-            drawPath(file, path);
+        if (!Paths.empty()) {
+            for (auto const& path : Paths) {
+                if (!path.empty()) {
+                    drawPath(file, path);
+                }
+            }
         }
         drawRobots(file);
         drawChargingStation(file);

@@ -1,9 +1,65 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(AGV.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  warehouse_map.cpp
-D:\VS\AGV\AGV\distance_utils.h(75,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-  (编译源文件“warehouse_map.cpp”)
+  main.cpp
+D:\VS\AGV\AGV\distance_utils.h(137,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
   
-D:\VS\AGV\AGV\distance_utils.h(76,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-  (编译源文件“warehouse_map.cpp”)
+D:\VS\AGV\AGV\distance_utils.h(138,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(117,157): warning C4244: “参数”: 从“const _Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(117,157): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(117,157): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(117,157): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(117,157): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(117,126): warning C4244: “参数”: 从“const _Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(117,126): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(117,126): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(117,126): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(117,126): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(117,95): warning C4244: “参数”: 从“_Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(117,95): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(117,95): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(117,95): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(117,95): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(117,82): warning C4244: “参数”: 从“_Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(117,82): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(117,82): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(117,82): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(117,82): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(239,152): warning C4244: “参数”: 从“const _Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(239,152): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(239,152): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(239,152): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(239,152): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(239,127): warning C4244: “参数”: 从“const _Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(239,127): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(239,127): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(239,127): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(239,127): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(239,102): warning C4244: “参数”: 从“_Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(239,102): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(239,102): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(239,102): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(239,102): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\VS\AGV\AGV\Robot.h(239,82): warning C4244: “参数”: 从“_Ty”转换到“int”，可能丢失数据
+D:\VS\AGV\AGV\Robot.h(239,82): warning C4244:         with
+D:\VS\AGV\AGV\Robot.h(239,82): warning C4244:         [
+D:\VS\AGV\AGV\Robot.h(239,82): warning C4244:             _Ty=double
+D:\VS\AGV\AGV\Robot.h(239,82): warning C4244:         ]
+  (编译源文件“main.cpp”)
   
   AGV.vcxproj -> D:\VS\AGV\x64\Debug\AGV Project.exe

@@ -17,21 +17,44 @@ using namespace std;
 
 struct Node {
     int x, y;
-    double g;
-    double h;
-    double f;
-    Node* parent;
+    int direction;  // Move direction£º0=UP£¬1=RIGHT£¬2=DOWN£¬3=LEFT;
+    double g;        //Cost from Start;
+    double h;        //Heuristic to Goal: Manhattan distance;
+    double f;        //Total Estimated Cost;
+    Node* parent;    //
 
-    Node(int x, int y) : x(x), y(y), g(0), h(0), f(0), parent(nullptr) {}
+    Node(int x, int y, int dir = -1)
+        : x(x), y(y), direction(dir), g(0), h(0), f(0), parent(nullptr) {}
+
+
+    //Determine whether a turn occurs£»
+    bool isTurning(const Node& next) const {
+        if (direction == -1) return false; 
+
+        int dx = next.x - x;
+        int dy = next.y - y;
+        int nextDir;
+        if (dx == 0 && dy == -1) nextDir = 0;        // UP;
+        else if (dx == 1 && dy == 0) nextDir = 1;    // RIGHT;
+        else if (dx == 0 && dy == 1) nextDir = 2;    // DOWN;
+        else if (dx == -1 && dy == 0) nextDir = 3;   // LEFT;
+        else return false;
+
+        return direction != nextDir;
+    }
+
 };
 
 class PathPlanner {
 private:
     const GridVisualizer& map;
-    vector<vector<bool>> obstacles;
+    vector<vector<bool>> obstacles;  //Obstacle Grid ÕÏ°­ÎïÍø¸ñ
     int gridWidth;
     int gridHeight;
-    const int GRID_STEP = 20; // Grid step size, assuming it is 20 pixels
+    const int GRID_STEP = 20;             // Grid step size, assuming it is 20 pixels;
+    const double OBSTACLE_PENALTY = 0.5;  // Penalty coefficient around obstacles;
+    const int OBSTACLE_INFLUENCE = 2;     // Obstacle impact range; 
+    const double TURNING_COST = 0.8;      //Turn Cost;
 
 
     void initializeGridDimensions() {
@@ -69,6 +92,41 @@ private:
         }
     }
 
+
+    double calculateDistanceToNearestObstacle(int x, int y) {
+        double minDistance = OBSTACLE_INFLUENCE + 1.0; 
+
+        for (int dy = -OBSTACLE_INFLUENCE; dy <= OBSTACLE_INFLUENCE; dy++) {
+            for (int dx = -OBSTACLE_INFLUENCE; dx <= OBSTACLE_INFLUENCE; dx++) {
+                int newX = x + dx;
+                int newY = y + dy;
+
+                if (isValidPosition(newX, newY) && obstacles[newY][newX]) {
+                    double distance = sqrt(dx * dx + dy * dy);
+                    minDistance = min(minDistance, distance);
+                }
+            }
+        }
+
+        return minDistance;
+    }
+
+
+    double calculateMovementCost(const Node& current, const Node& neighbor) {
+        double cost = 1.0;
+        if (current.isTurning(neighbor)) {
+            cost += TURNING_COST;
+        }
+
+        double obstacleDistance = calculateDistanceToNearestObstacle(neighbor.x, neighbor.y);
+
+        if (obstacleDistance <= OBSTACLE_INFLUENCE) {
+            double penalty = OBSTACLE_PENALTY * (1.0 - obstacleDistance / (OBSTACLE_INFLUENCE + 1.0));
+            cost += penalty;
+        }
+
+        return cost;
+    }
 
  
     pair<int, int> findNearestGridPoint(int x, int y) {                  // Find the nearest grid point
@@ -132,8 +190,8 @@ private:
             int newY = current.y + dy[i];
 
             if (isSafePosition(newX, newY)) {
-                Node neighbor(newX, newY);
-                neighbor.g = current.g + 1.0;                              // The Movement Cost is 1
+                Node neighbor(newX, newY,i);
+                neighbor.g = calculateMovementCost(current, neighbor);                             // The Movement Cost is 1
                 neighbors.push_back(neighbor);
             }
         }
@@ -168,7 +226,7 @@ public:
         vector<Node*> openList;
         set<pair<int, int>> closedList;
 
-        Node* startNode = new Node(startX, startY);
+        Node* startNode = new Node(startX, startY, -1);
         startNode->h = heuristic(startX, startY, goalX, goalY);
         startNode->f = startNode->h;
 
@@ -212,7 +270,7 @@ public:
                     [&neighbor](const Node* n) { return n->x == neighbor.x && n->y == neighbor.y; });
 
                 if (nodeIt == openList.end()) {
-                    Node* newNode = new Node(neighbor.x, neighbor.y);
+                    Node* newNode = new Node(neighbor.x, neighbor.y, neighbor.direction);
                     newNode->g = newG;
                     newNode->h = heuristic(neighbor.x, neighbor.y, goalX, goalY);
                     newNode->f = newNode->g + newNode->h;
@@ -223,6 +281,7 @@ public:
                     Node* existingNode = *nodeIt;
                     if (newG < existingNode->g) {
                         existingNode->g = newG;
+                        existingNode->direction = neighbor.direction;
                         existingNode->f = existingNode->g + existingNode->h;
                         existingNode->parent = current;
                     }

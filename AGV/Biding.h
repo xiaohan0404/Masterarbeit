@@ -72,7 +72,7 @@ public:
             }
         }
         if (winner != nullptr && min_bidding > -1) {
-            if (winner->addTask(*newTask, best_result.position, winner->getTasklist())) return winner;
+            if (winner->addTask(best_result.position, *newTask, winner->getTasklist(), winner->getPath())) return winner;
         }
         return nullptr;
     }

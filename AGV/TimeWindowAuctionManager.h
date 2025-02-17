@@ -99,7 +99,7 @@ public:
 
                 for (Robot& robot : robots) {
                     double alpha = 0.7;
-                    auto current_result = robot.calculateBid_TePSSI(*task, robot, alpha);
+                    auto current_result = robot.calculateBid_TePSSI_Heterogeneous(*task, robot, alpha);
                     double bid = current_result.first;
                     InsertionResult result = current_result.second;
 
@@ -111,7 +111,7 @@ public:
                 }
 
                 if (winner != nullptr) {
-                    if (winner->addTask(*task, best_result.position, winner->getTasklist())) {
+                    if (winner->addTask(best_result.position , *task, winner->getTasklist(), winner->getPath())) {
                         for (const Task& planned_task : best_result.task_sequence) {
                             if (planned_task.getTaskId() == task->getTaskId()) {
                                 task->time = planned_task.time;

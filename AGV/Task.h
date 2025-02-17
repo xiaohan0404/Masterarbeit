@@ -24,10 +24,10 @@ class Task {
 private:
     string task_id;
     vector<double> location_task;
-    double Est;              // 最早开始时间 (Earliest Start Time)
-    double Lft;              // 最晚结束时间 (Latest Finish Time)
-    double Dut;              // 任务持续时间 (Duration Time)
-    double Lst;              // 最晚开始时间 (Latest Start Time)
+    double Est;              // Earliest Start Time
+    double Lft;              // Latest Finish Time
+    double Dut;              // Duration Time
+    double Lst;              // Latest Start Time
     bool type;               // Task type: true = high level task;    false = low level task;
     bool is_completed;       // Finish or not 
     int priority_level;      // Priority Level 
